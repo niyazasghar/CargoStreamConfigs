@@ -7,10 +7,11 @@ spring:
     username: inventory_user
     password: inventory_pass
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
 
 app:
-  test: hello-from-inventory-local
+  test: loaded-inventory-service
