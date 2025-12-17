@@ -18,4 +18,4 @@ spring:
       defaultBinder: rabbit
 
 app:
-  test: hello-from-shipment-local
+  test: loaded-shipment-service
