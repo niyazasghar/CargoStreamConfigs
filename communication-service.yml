@@ -7,6 +7,7 @@ spring:
     username: order_user
     password: order_pass
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -24,9 +25,8 @@ resilience4j:
       inventory:
         slidingWindowSize: 10
         minimumNumberOfCalls: 5
-        permittedNumberOfCallsInHalfOpenState: 3
         waitDurationInOpenState: 10s
         failureRateThreshold: 50
 
 app:
-  test: hello-from-order-local
+  test: loaded-order-service
