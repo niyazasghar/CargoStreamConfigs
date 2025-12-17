@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/shipment_db
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+spring:
+  cloud:
+    stream:
+      defaultBinder: rabbit
+
+app:
+  test: hello-from-shipment-local
