@@ -12,7 +12,6 @@ spring:
     username: guest
     password: guest
 
-spring:
   cloud:
     stream:
       defaultBinder: rabbit
